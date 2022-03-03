@@ -3,6 +3,9 @@
     <body>
         <h1>Date search</h1>
             <p>ID | Date | Day of Week | PdDistrict | Address </p>
+            {% if rows==[] %}
+            <p>No data in this date.</p>
+            {% endif %}
             {% for row in rows %}
             <p>
                 {{row["id"]}} |

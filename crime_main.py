@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 db_name = 'crime_data.db'
@@ -48,3 +48,20 @@ def total():
     rows_position = cur.fetchall()
     conn.close()
     return render_template('total.html', rows_date=rows_date, rows_position=rows_position)
+
+@app.route('/coordinates_search', methods=["GET", "POST"])
+def coordinates_search():
+    longitude = '-'
+    latitude = '3'
+    if request.method=="POST":
+        longitude = request.form["longitude"]
+        latitude = request.form["latitude"]
+    conn = sqlite3.connect(db_name)
+    conn.row_factory = sqlite3.Row
+    cur = conn.cursor()
+    cur.execute("select * from crime_position WHERE longitude LIKE ? AND latitude LIKE ? ", (longitude+'%', latitude+'%'))
+    rows = cur.fetchall()
+    conn.close()
+    return render_template("coordinates_search.html", rows=rows)
+
+
