@@ -8,13 +8,13 @@
   * Date search  
   * Position search  
   * One table overview function.  
-submit on 01/03/2022  
+(submit on 01/03/2022)  
 
 ##### Submit2:  
 1. Restructure the database and tables to make the data lists more reasonable.  
 2. Add Try-except function to avoid wrong or unexpected data, or other error happen perheps.  
 3. Add one accurate search function by inputing coordinates.  
-submit on 03/03/2022
+(submit on 03/03/2022)
 
 
 
