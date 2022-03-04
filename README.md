@@ -22,7 +22,7 @@
 (submit on 04/03/2022)
 
 
-Report part:
+### Report part:
 #### Data source
 In this task, I choose a crime in San Francisco happened in the first 3 months in 2015, which contains more than 20000 rows of data and 6 column  for each row.
 #### Data parse
@@ -30,7 +30,7 @@ To make the app more powerful with multi-function, I generated two linked tables
 #### Development
 Not only the two search function mentioned, but a coordinate search is provided. This function allows the user to enter a couple of number including longitude and latitude to match the crime events happened around there. The system is flexible, and various accuracy floating numbers are available, which will influence the accuracy of the result definitely. More exact and accurate coordinates means more digit number in floating, leads to more accurate and less result.
 #### What’s more in development
-To avoid error data, there is an error handling part in code, so that the app could prevent to crash down when an unexpected data occurred.
-To ensure the app could run smoothly and successfully with less and even no bug as expected. A behave test is added.
-All work and files have been uploaded to github to achieve version tracking and control.
-The app could be run on Heroku so that it ensures everyone could use it.
+To avoid error data, there is an error handling part in code, so that the app could prevent to crash down when an unexpected data occurred.  
+To ensure the app could run smoothly and successfully with less and even no bug as expected. A behave test is added.  
+All work and files have been uploaded to github to achieve version tracking and control.  
+The app could be run on Heroku so that it ensures everyone could use it.  
