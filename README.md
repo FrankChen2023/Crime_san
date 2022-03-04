@@ -16,6 +16,8 @@
 3. Add one accurate search function by inputing coordinates.  
 (submit on 03/03/2022)
 
-
+##### Submit3:  
+1. Add a behave test.  
+(submit on 04/03/2022)
 
 
