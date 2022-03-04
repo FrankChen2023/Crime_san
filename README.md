@@ -18,6 +18,7 @@
 
 ##### Submit3:  
 1. Add a behave test.  
+2. Connect and test with Heroku  
 (submit on 04/03/2022)
 
 
